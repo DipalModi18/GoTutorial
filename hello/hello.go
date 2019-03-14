@@ -1,7 +1,9 @@
-// Package called main is used to create executable binary. Program execution starts in package main by calling its function which also called main.
+// For Go, a package is just a directory
+// Package called main is used to create executable binary. 
+// Program execution starts in package main by calling its function which also called main.
 package main
 
-// one import declaration with two ImportSpecs. Each ImportSpec defines single package import.
+// one import declaration with three ImportSpecs. Each ImportSpec defines single package import.
 import (
     "fmt"
 	"GoTutorial/stringutil"  // import path is path relative package’s vendor directory or `go env GOPATH`/src
@@ -14,3 +16,9 @@ func main() {
 
 	fmt.Println(my_example.Example_sum(2, 3))
 }
+
+
+// there are two types of packages. 
+// An executable package and an utility package. 
+// A executable package is your main application since you will be running it. 
+// An utility package is not self executable, instead it enhances functionality of an executable package by providing utility functions and other important assets.
