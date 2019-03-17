@@ -1,8 +1,8 @@
-package main
+package go_files
 
 import "fmt"
 
-func main() {
+func Loops_example() {
 	/*
 	The syntax of for loop in Go programming language is
 	for [condition |  ( init; condition; increment ) | Range] {
@@ -28,4 +28,4 @@ func main() {
 	}   
 }
 
-// To run: go run loops_example.go 
+// To run: go run main.go -pkgname=loops_example

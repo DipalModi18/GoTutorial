@@ -1,9 +1,9 @@
 // Reference: https://www.tutorialspoint.com/go/go_variables.htm
-package main
+package go_files
 
 import "fmt"
 
-func main() {
+func Variable_declarations() {
    var x float64  // A static type variable declaration provides assurance to the compiler that there is one variable available with the given type and name so that the compiler can proceed for further compilation without requiring the complete detail of the variable.
    x = 20.0
    // Or above two line can be combined as: var x float64 = 20.0
@@ -42,4 +42,4 @@ func main() {
    */
 }
 
-// To run: go run variable_declarations.go
+// To run: go run main.go -pkgname=variable_declarations

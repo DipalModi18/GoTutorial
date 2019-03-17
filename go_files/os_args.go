@@ -1,4 +1,4 @@
-package main
+package go_files
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"flag"  // Go provides a flag package supporting basic command-line flag parsing.
 )
 
-func main() {
+func Os_args() {
 	// Reference: https://gobyexample.com/command-line-arguments
 	// os.Args provides access to raw command-line arguments
 	argsWithProg := os.Args
@@ -17,7 +17,7 @@ func main() {
 	fmt.Println(argsWithoutProg)
 	// fmt.Println(os.Args[2])
 
-	// To run: go run os_args.go a b c d
+	// To run: go run main.go -pkgname=os_args a b c d
 
 
 
@@ -43,9 +43,9 @@ func main() {
     fmt.Println("svar:", svar)
 	fmt.Println("tail:", flag.Args())
 	
-	// To run: go run os_args.go -word=opt -numb=7 -fork -svar=flag
-	// 		   go run os_args.go -word=opt a1 a2 a3
-	// 		   go run os_args.go -h  // for help
+	// To run: go run main.go -pkgname=os_args -word=opt -numb=7 -fork -svar=flag
+	// 		   go run main.go -pkgname=os_args -word=opt a1 a2 a3
+	// 		   go run main.go -pkgname=os_args -h  // for help
 
 
 	// To set environment variable

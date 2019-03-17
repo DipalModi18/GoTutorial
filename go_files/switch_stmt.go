@@ -1,8 +1,8 @@
-package main
+package go_files
 
 import "fmt"
 
-func main() {
+func Switch_stmt() {
 	// Reference: https://www.tutorialspoint.com/go/go_switch_statement.htm
 	// Expression switch
 	var grade string = "B"
@@ -39,14 +39,16 @@ func main() {
 		 fmt.Printf("type of x :%T",i)    
 		 // No break is needed in the case statement.            
       case int:	  
-         fmt.Printf("x is int")                       
+         fmt.Printf("x is int\n")                       
       case float64:
-         fmt.Printf("x is float64")           
+         fmt.Printf("x is float64\n")           
       case func(int) float64:
-         fmt.Printf("x is func(int)")                      
+         fmt.Printf("x is func(int)\n")                      
       case bool, string:
-         fmt.Printf("x is bool or string")       
+         fmt.Printf("x is bool or string\n")       
       default:
-         fmt.Printf("don't know the type")     
+         fmt.Printf("don't know the type\n")     
    }  
 }
+
+// To run: go run main.go -pkgname=switch_stmt
