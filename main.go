@@ -5,6 +5,7 @@ import (
 	"flag"
 	"GoTutorial/go_files"
 	"GoTutorial/struct_examples"
+	"GoTutorial/concurrency"
 )
 
 func main() {
@@ -29,6 +30,10 @@ func main() {
 	case "variable_declarations":
 		go_files.Variable_declarations()
 		// go run main.go -pkgname=variable_declarations
+	case "concurrency":
+		concurrency.Perform_goroutine()
+	case "temp":
+		go_files.Perform()
 	default: 
 		fmt.Println("NO files choosen")
 	}

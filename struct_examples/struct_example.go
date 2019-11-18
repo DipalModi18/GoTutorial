@@ -31,7 +31,9 @@ func Struct_example() {
 
 	rp := &rectangle1
     fmt.Println("area: ", rp.area())
-    fmt.Println("perim:", rp.perim())
+	fmt.Println("perim:", rp.perim())
+	
+	Interface_example()
 }
 
 // To run: go run main.go -pkgname=structpkg
